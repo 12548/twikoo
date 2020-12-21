@@ -16,8 +16,8 @@
 <script>
 const metaInputs = [
   { key: 'nick', locale: '昵称', placeholder: '必填', name: 'nick' },
-  { key: 'mail', locale: '邮箱', placeholder: '必填', name: 'mail' },
-  { key: 'link', locale: '网址', placeholder: '选填', name: 'link' }
+  { key: 'mail', locale: 'QQ号/邮箱', placeholder: '必填', name: 'mail' },
+  // { key: 'link', locale: '网址', placeholder: '选填', name: 'link' }
 ]
 
 export default {

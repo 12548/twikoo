@@ -1,6 +1,5 @@
 <template>
   <div class="tk-comments">
-    <tk-submit @load="initComments" :config="config" />
     <div class="tk-comments-container" v-loading="loading">
       <div class="tk-comments-title">
         <span>{{ count }} 条评论</span>
@@ -16,6 +15,7 @@
         @load="initComments" />
       <div class="tk-expand" v-if="showExpand" @click="onExpand" v-loading="loadingMore">查看更多</div>
     </div>
+    <tk-submit @load="initComments" :config="config" />
   </div>
 </template>
 
