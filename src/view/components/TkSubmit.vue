@@ -1,5 +1,8 @@
 <template>
   <div class="tk-submit">
+    <div class="tk-comments-title">
+      发表评论
+    </div>
     <div class="tk-row">
       <tk-avatar :config="config" :mail="mail" />
       <div class="tk-col">
@@ -251,6 +254,16 @@ export default {
 </script>
 
 <style scoped>
+
+.tk-comments-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
 .tk-submit {
   display: flex;
   flex-direction: column;
