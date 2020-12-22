@@ -1,5 +1,5 @@
 <template>
-  <div class="tk-comments">
+  <div class="tk-comments" v-if="inited">
     <div class="tk-comments-container" v-loading="loading">
       <div class="tk-comments-title">
         <span>{{ count }} 条评论</span>
@@ -35,6 +35,7 @@ export default {
       loading: true,
       loadingMore: false,
       config: {},
+      inited: false,
       comments: [],
       showExpand: true,
       count: 0,
@@ -48,6 +49,7 @@ export default {
       if (result && result.result && result.result.config) {
         this.config = result.result.config
       }
+      this.inited = true
     },
     async initComments () {
       this.loading = true
